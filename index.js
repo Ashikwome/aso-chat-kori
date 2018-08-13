@@ -14,3 +14,5 @@ bot.on('message', (payload, chat,) => {
       chat.say(['Welcome to Aso Chat Kori', 'I\'m a program', 'I was written by Womee']);
     });
 });
+
+bot.start(PORT);
