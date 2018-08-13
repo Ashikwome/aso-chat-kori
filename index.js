@@ -9,6 +9,8 @@ const bot = new BootBot({
 });
 
 bot.on('message', (payload, chat,) => {
+    console.log(JSON.stringify(payload, null, 2));
+    
     chat.sendTypingIndicator(1000)
     .then(() => {
       chat.say(['Welcome to Aso Chat Kori', 'I\'m a program', 'I was written by Womee']);
